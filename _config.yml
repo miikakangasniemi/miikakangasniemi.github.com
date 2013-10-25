@@ -1,0 +1,31 @@
+url: /
+baseurl:
+permalink: pretty
+name: Miika Kangasniemi.net
+menu:
+    -
+        text: Valokuvat
+        url: /valokuvat
+    -
+        text: Taulut
+        url: /taulut
+    -
+        text: Videot
+        url: /videot
+    -
+        text: Taitot
+        url: /taitot
+    -
+        text: Yritysgrafiikka
+        url: /yritysgrafiikka
+    -
+        text: Julisteet
+        url: /julisteet
+    -
+        text: WWW-sivut
+        url: /www-sivut
+    -
+        text: Miika Kangasniemi
+        url: /miika-kangasniemi
+
+exclude: [ 'sass', 'config.rb', 'Procfile', 'Thumbs.db' ]

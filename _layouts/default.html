@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fi">
+<![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fi"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fi"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fi"> <!--<![endif]-->
+    <head>
+        <script type="text/javascript" src="//use.typekit.net/tkx1vkm.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <base href="{{ site.url }}">
+        <title>{{ page.title }} | {{ site.name }}</title>
+        <meta name="keywords" content="{{ site.keywords }}">
+        <meta name="description" content="{{ site.description }}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href="{{ site.baseurl }}/stylesheets/app.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script>
+            document.createElement('header');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('aside');
+            document.createElement('footer');
+        </script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+        <p class=chromeframe>Selaimesi on
+          <em>ikivanha!</em> <a href="http://browsehappy.com/">Päivitä toiseen
+              selaimeen</a> tai <a
+              href="http://www.google.com/chromeframe/?redirect=true">asenna
+              Google Chrome Frame</a> kokeaksesi tämän sivuston
+        </p><![endif]-->
+
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="{{ site.url }}">
+                        {{ site.name }}
+                    </a>
+                </h1>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <div class="container">
+                {% assign menu_items = site.menu %}
+                {% include navigation_list.html %}
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="main">
+                <section>
+                    <section>
+                        <header>
+                            <h2>
+                                {{ page.title }}
+                            </h2>
+                        </header>
+                        {{ content }}
+                    </section>
+                </section>
+                <aside>
+                    {% if page.url == "/" and false %}
+                        <section>
+                            <header>
+                                <h3>
+                                    Uusimmat ajatukset
+                                </h3>
+                            </header>
+                            {% for post in site.posts %}
+                                <article>
+                                    <header>
+                                        <h4>
+                                            {{ post.title }}
+                                        </h4>
+                                    </header>
+                                    {{ post.content }}
+                                </article>
+                            {% endfor %}
+                        </section>
+                    {% else %}
+                        <nav>
+                            {% assign menu_items = site.menu %}
+                            {% include navigation_list.html %}
+                        </nav>
+                    {% endif %}
+                </aside>
+                <footer>
+                    <p>puh. 040 834 3161 – s-posti miika.kangasniemi(ät)gmail.com</p>
+                </footer>
+            </div>
+        </div>
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        {% if page.javascript %}
+        {% for js in page.javascript %}
+        <script src="/javascripts/{{ js }}"></script>
+        {% endfor %}
+        {% endif %}
+        <script src="/javascripts/site.js"></script>-->
+    </body>
+</html>

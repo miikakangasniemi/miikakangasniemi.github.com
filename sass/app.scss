@@ -1,0 +1,233 @@
+@import "settings";
+@import "normalize";
+@import "compass/typography/text/replacement";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3";
+@import "susy";
+
+@include border-box-sizing;
+
+@include establish-baseline;
+
+body {
+    background: $white;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 1em 0 0;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.25em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+a {
+    color: $red;
+}
+
+.container {
+    @include container($total-columns, $break);
+}
+
+header {
+    h1 {
+        @include adjust-font-size-to(33px, 2);
+        @include leader;
+        @include trailer(0.1);
+        a {
+            display: block;
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 100;
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+nav {
+    @include padding-leader(2/3);
+    @include padding-trailer(2/3);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            display: none;
+        }
+    }
+
+    li {
+        display: block;
+    }
+
+    .current, .path {
+        font-weight: 700;
+
+        &>ul {
+            li {
+                font-weight: 400;
+
+                &.current, &.path {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    a {
+        @include adjust-font-size-to(14px, 1);
+        display: block;
+        text-decoration: none;
+    }
+
+    .has-children.current, .has-children.path {
+        display: block;
+
+        &>ul {
+            display: block;
+
+            &>li {
+                display: block;
+            }
+        }
+    }
+}
+
+.main-nav {
+    @include trailer(2);
+    background: $grey;
+
+    a {
+        color: $white;
+    }
+
+    @include at-breakpoint($wide-phone-break) {
+        li {
+            display: inline-block;
+            padding-right: 1.25em;
+
+            &.has-children.current, &.has-children.path {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.main {
+    aside {
+        nav {
+            display: none;
+
+            a {
+                color: $dark;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: .5em 0;
+        }
+    }
+
+    footer {
+        clear: both;
+        padding-top: .1px;
+    }
+}
+
+@include at-breakpoint($break) {
+    .main {
+        &>nav {
+            li {
+                &.has-children.current, &.has-children.path {
+                    display: inline-block;
+
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &>section {
+            @include span-columns(7, $break);
+        }
+
+        &>aside {
+            @include span-columns(3 omega, $break);
+            background: $white;
+            color: $dark;
+            padding: 0 1em;
+
+            nav {
+                display: block;
+                margin-bottom: 0;
+
+                li {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+form {
+    label {
+        @include pie-clearfix;
+        display: block;
+        margin: 10px 0;
+
+        b {
+            @include span-columns(1, 4);
+            text-align: right;
+        }
+
+        input, textarea {
+            @include span-columns(3 omega, 4);
+        }
+    }
+
+    .actions {
+        @include push(1, 4);
+    }
+}
+
+
+.btn, input[type="submit"] {
+    background: $red;
+    color: $dark;
+    border: none;
+    padding: .3em .8em;
+    line-height: 1;
+    display: inline-block;
+}
