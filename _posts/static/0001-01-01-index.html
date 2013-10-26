@@ -7,7 +7,7 @@ permalink: /
 <div class="boxes">
     {% for box in site.menu %}
     <a class="box" href="{{ box.url }}" style="background-image: url('{{ site.baseurl }}/media/theme-images/{{ box.imagename }}');">
-        {{ box.text }}
+        <span>{{ box.text }}</span>
     </a>
     {% endfor %}
 </div>

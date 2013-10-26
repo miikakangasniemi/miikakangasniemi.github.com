@@ -58,46 +58,16 @@
         <div class="container">
             <div class="main">
                 <section>
-                    <section>
-                        <header>
-                            <h2>
-                                {{ page.title }}
-                            </h2>
-                        </header>
-                        {{ content }}
-                    </section>
+                    {{ content }}
                 </section>
-                <aside>
-                    {% if page.url == "/" and false %}
-                        <section>
-                            <header>
-                                <h3>
-                                    Uusimmat ajatukset
-                                </h3>
-                            </header>
-                            {% for post in site.posts %}
-                                <article>
-                                    <header>
-                                        <h4>
-                                            {{ post.title }}
-                                        </h4>
-                                    </header>
-                                    {{ post.content }}
-                                </article>
-                            {% endfor %}
-                        </section>
-                    {% else %}
-                        <nav>
-                            {% assign menu_items = site.menu %}
-                            {% include navigation_list.html %}
-                        </nav>
-                    {% endif %}
-                </aside>
-                <footer>
-                    <p>puh. 040 834 3161 – s-posti miika.kangasniemi(ät)gmail.com</p>
-                </footer>
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <p>puh. 040 834 3161 – s-posti miika.kangasniemi(ät)gmail.com</p>
+            </div>
+        </footer>
 
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         {% if page.javascript %}

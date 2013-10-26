@@ -21,40 +21,41 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    @include leader(2);
+    @include rhythm(4, 0, 0, 2);
     font-weight: 400;
 }
 
 h1 {
-    font-size: 3em;
-    margin: 0;
+    @include adjust-font-size-to(33px);
 }
 
 h2 {
-    font-size: 2.25em;
-    margin: 0;
+    @include adjust-font-size-to(27px);
 }
 
 h3 {
-    font-size: 1.75em;
+    @include adjust-font-size-to(23px);
 }
 
 h4 {
-    font-size: 1.25em;
+    @include adjust-font-size-to(18px);
 }
 
 h5 {
-    font-size: 1em;
+    @include adjust-font-size-to(16px);
     font-weight: 700;
 }
 
 h6 {
-    font-size: 1em;
+    @include adjust-font-size-to(16px);
 }
 
 a {
     color: $red;
+}
+
+p {
+    @include rhythm(0, 0, 0, 4);
 }
 
 .container {
@@ -135,7 +136,7 @@ nav {
 }
 
 .main-nav {
-    @include trailer(4);
+    @include trailer(9);
     background: $grey;
 
     a {
@@ -155,9 +156,15 @@ nav {
     }
 }
 
+.boxes {
+    @include pie-clearfix;
+    @include trailer(-2);
+}
+
 .box {
     @include span-columns(1);
     @include nth-omega(2n);
+    @include trailer(2);
     padding-bottom: columns(1);
     position: relative;
     display: block;
@@ -165,6 +172,37 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    color: $white;
+    box-shadow: rgba(0, 0, 0, 0.3) -1px 1px 3px;
+
+    span {
+        @include rhythm(0, 5/3, 5/3, 0);
+        padding-left: 1em;
+        padding-right: 1em;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+
+    &:after {
+        transition: .2s;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background: transparent;
+        z-index: 1;
+    }
+
+    &:hover:after {
+        background: rgba(0, 0, 0, 0.2);
+    }
 
     @include at-breakpoint($break) {
         @include span-columns(1);
@@ -174,61 +212,12 @@ nav {
     }
 }
 
-.main {
-    aside {
-        nav {
-            display: none;
-
-            a {
-                color: $dark;
-            }
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            margin: .5em 0;
-        }
-    }
-
-    footer {
-        clear: both;
-        padding-top: .1px;
-    }
-}
-
-@include at-breakpoint($break) {
-    .main {
-        &>nav {
-            li {
-                &.has-children.current, &.has-children.path {
-                    display: inline-block;
-
-                    ul {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        &>section {
-            @include span-columns(7, $break);
-        }
-
-        &>aside {
-            @include span-columns(3 omega, $break);
-            background: $white;
-            color: $dark;
-            padding: 0 1em;
-
-            nav {
-                display: block;
-                margin-bottom: 0;
-
-                li {
-                    display: none;
-                }
-            }
-        }
-    }
+footer {
+    @include leader(9);
+    @include leading-border(3px, 4);
+    clear: both;
+    border-top-color: $grey;
+    text-align: center;
 }
 
 form {
