@@ -1,6 +1,0 @@
----
-title: Etusivu
-layout: default
-permalink: /
----
-

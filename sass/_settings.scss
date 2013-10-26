@@ -1,11 +1,12 @@
-$total-columns: 8;
-$column-width: 4em;
-$gutter-width: 1em;
-$grid-padding: $gutter-width;
-$wide-phone-break: 4;
-$break: 10;
 $base-font-size: 16px;
-$base-line-height: 24px;
+$base-line-height: 6px;
+
+$total-columns: 2;
+$column-width: 14.375em;
+$gutter-width: 0.750em;
+$grid-padding: $gutter-width;
+$wide-phone-break: 3;
+$break: 4;
 
 $white: #ffffff;
 $black: #000000;

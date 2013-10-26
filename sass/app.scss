@@ -9,6 +9,10 @@
 
 @include establish-baseline;
 
+html {
+    @include adjust-leading-to(4);
+}
+
 body {
     background: $white;
     font-family: Verdana, sans-serif;
@@ -17,9 +21,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    @include leader(2);
     font-weight: 400;
-    margin: 1em 0 0;
-    line-height: 1.1;
 }
 
 h1 {
@@ -54,14 +58,22 @@ a {
 }
 
 .container {
-    @include container($total-columns, $break);
+    @include container($total-columns);
+
+    @include at-breakpoint($wide-phone-break) {
+        @include set-container-width;
+    }
+
+    @include at-breakpoint($break) {
+        @include set-container-width;
+    }
 }
 
 header {
     h1 {
-        @include adjust-font-size-to(33px, 2);
-        @include leader;
-        @include trailer(0.1);
+        @include adjust-font-size-to(33px);
+        @include rhythm(4, 0, 0, 1, 33px);
+
         a {
             display: block;
             font-family: "proxima-nova", sans-serif;
@@ -73,8 +85,7 @@ header {
 }
 
 nav {
-    @include padding-leader(2/3);
-    @include padding-trailer(2/3);
+    @include rhythm(0, 2, 2, 0);
 
     ul {
         list-style: none;
@@ -105,7 +116,7 @@ nav {
     }
 
     a {
-        @include adjust-font-size-to(14px, 1);
+        @include adjust-font-size-to(14px);
         display: block;
         text-decoration: none;
     }
@@ -124,7 +135,7 @@ nav {
 }
 
 .main-nav {
-    @include trailer(2);
+    @include trailer(4);
     background: $grey;
 
     a {
@@ -141,6 +152,25 @@ nav {
                 vertical-align: top;
             }
         }
+    }
+}
+
+.box {
+    @include span-columns(1);
+    @include nth-omega(2n);
+    padding-bottom: columns(1);
+    position: relative;
+    display: block;
+    height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include at-breakpoint($break) {
+        @include span-columns(1);
+        @include remove-nth-omega(2n, $context: $total-columns);
+        @include nth-omega(4n);
+        padding-bottom: columns(1);
     }
 }
 

@@ -359,6 +359,10 @@ table {
 
 html {
   font-size: 16px;
+  line-height: 0.375em;
+}
+
+html {
   line-height: 1.5em;
 }
 
@@ -370,9 +374,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-top: 0.75em;
   font-weight: 400;
-  margin: 1em 0 0;
-  line-height: 1.1;
 }
 
 h1 {
@@ -408,10 +412,10 @@ a {
 
 .container {
   *zoom: 1;
-  max-width: 41em;
-  _width: 41em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 31em;
+  _width: 31em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -420,17 +424,24 @@ a {
   display: table;
   clear: both;
 }
-@media (min-width: 51em) {
+@media (min-width: 46.125em) {
   .container {
-    max-width: 51em;
+    max-width: 46.125em;
+  }
+}
+@media (min-width: 61.25em) {
+  .container {
+    max-width: 61.25em;
   }
 }
 
 header h1 {
   font-size: 2.0625em;
-  line-height: 1.45455em;
-  margin-top: 1.5em;
-  margin-bottom: 0.15em;
+  line-height: 1.27273em;
+  margin-top: 0.72727em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.18182em;
 }
 header h1 a {
   display: block;
@@ -441,8 +452,10 @@ header h1 a {
 }
 
 nav {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-top: 0em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em;
 }
 nav ul {
   list-style: none;
@@ -466,7 +479,7 @@ nav .current > ul li.current, nav .current > ul li.path, nav .path > ul li.curre
 }
 nav a {
   font-size: 0.875em;
-  line-height: 1.71429em;
+  line-height: 1.28571em;
   display: block;
   text-decoration: none;
 }
@@ -481,13 +494,13 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 
 .main-nav {
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
   background: #626e73;
 }
 .main-nav a {
   color: white;
 }
-@media (min-width: 21em) {
+@media (min-width: 46.125em) {
   .main-nav li {
     display: inline-block;
     padding-right: 1.25em;
@@ -495,6 +508,40 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   .main-nav li.has-children.current, .main-nav li.has-children.path {
     display: inline-block;
     vertical-align: top;
+  }
+}
+
+.box {
+  width: 48.72881%;
+  float: left;
+  margin-right: 2.54237%;
+  display: inline;
+  padding-bottom: 48.72881%;
+  position: relative;
+  display: block;
+  height: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.box:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 61.25em) {
+  .box {
+    width: 24.05858%;
+    float: left;
+    margin-right: 1.25523%;
+    padding-bottom: 24.05858%;
+  }
+  .box:nth-child(2n) {
+    float: left;
+    margin-right: 1.25523%;
+  }
+  .box:nth-child(4n) {
+    float: right;
+    margin-right: 0;
   }
 }
 
@@ -512,7 +559,7 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   padding-top: .1px;
 }
 
-@media (min-width: 51em) {
+@media (min-width: 61.25em) {
   .main > nav li.has-children.current, .main > nav li.has-children.path {
     display: inline-block;
   }
@@ -520,12 +567,12 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
     display: none;
   }
   .main > section {
-    width: 69.38776%;
+    width: 175.94142%;
     float: left;
-    margin-right: 2.04082%;
+    margin-right: 1.25523%;
   }
   .main > aside {
-    width: 28.57143%;
+    width: 74.68619%;
     float: right;
     margin-right: 0;
     background: white;
@@ -551,21 +598,21 @@ form label:after {
   clear: both;
 }
 form label b {
-  width: 21.05263%;
+  width: 24.05858%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 1.25523%;
   display: inline;
   text-align: right;
 }
 form label input, form label textarea {
-  width: 73.68421%;
+  width: 74.68619%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.75em;
   display: inline;
 }
 form .actions {
-  margin-left: 26.31579%;
+  margin-left: 25.31381%;
 }
 
 .btn, input[type="submit"] {
