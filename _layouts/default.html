@@ -29,7 +29,7 @@
         </script>
         <![endif]-->
     </head>
-    <body>
+    <body{% if page.extra_classes %} class="{{ page.extra_classes }}"{% endif %}>
         <!--[if lt IE 7]>
         <p class=chromeframe>Selaimesi on
           <em>ikivanha!</em> <a href="http://browsehappy.com/">Päivitä toiseen
