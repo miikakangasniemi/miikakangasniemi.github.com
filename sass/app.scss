@@ -188,6 +188,10 @@ nav {
         z-index: 2;
     }
 
+    .inner {
+        margin: rhythm(2) 2em;
+    }
+
     &:after {
         transition: .2s;
         content: "";
@@ -209,6 +213,19 @@ nav {
         @include remove-nth-omega(2n, $context: $total-columns);
         @include nth-omega(4n);
         padding-bottom: columns(1);
+    }
+
+    .big & {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-right: 0;
+        background-color: $grey;
+
+        @include at-breakpoint($break) {
+            @include span-columns(2);
+            @include nth-omega(2n);
+            padding-bottom: columns(2);
+        }
     }
 }
 

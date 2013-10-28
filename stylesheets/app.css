@@ -569,6 +569,9 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   background: rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
+.box .inner {
+  margin: 0.75em 2em;
+}
 .box:after {
   transition: .2s;
   content: "";
@@ -595,6 +598,24 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
     margin-right: 1.25523%;
   }
   .box:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+.big .box {
+  width: 100%;
+  padding-bottom: 100%;
+  margin-right: 0;
+  background-color: #626e73;
+}
+@media (min-width: 61.25em) {
+  .big .box {
+    width: 49.37238%;
+    float: left;
+    margin-right: 1.25523%;
+    padding-bottom: 49.37238%;
+  }
+  .big .box:nth-child(2n) {
     float: right;
     margin-right: 0;
   }

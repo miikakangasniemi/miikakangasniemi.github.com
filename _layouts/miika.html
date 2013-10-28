@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<div class="boxes">
+<div class="boxes big">
     <div class="box">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
+        <div class="inner">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+        </div>
     </div>
     <div class="box" style="background-image: url('{{ config.baseurl }}/media/theme-images/{{ page.imagename }}');"></div>
 </div>
