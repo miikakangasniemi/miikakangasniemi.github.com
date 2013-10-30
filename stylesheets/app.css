@@ -374,42 +374,27 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.75em;
+  margin: 0;
+  padding: 0;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 2.0625em;
-  line-height: 1.27273em;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-top: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 1.6875em;
-  line-height: 1.33333em;
-}
-
-h3 {
-  font-size: 1.4375em;
-  line-height: 1.30435em;
-}
-
-h4 {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-}
-
-h5 {
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.6em;
 }
 
 a {
@@ -557,38 +542,6 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 .box.title, .box.content {
   background-color: #626e73;
 }
-.box span {
-  margin-top: 0em;
-  padding-top: 0.625em;
-  padding-bottom: 0.625em;
-  margin-bottom: 0em;
-  padding-left: 1em;
-  padding-right: 1em;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: auto;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-}
-.box .inner {
-  margin: 0.75em 2em;
-}
-.box:after {
-  transition: .2s;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  background: transparent;
-  z-index: 1;
-}
-.box:hover:after {
-  background: rgba(0, 0, 0, 0.2);
-}
 @media (min-width: 61.25em) {
   .box {
     width: 24.05858%;
@@ -621,6 +574,48 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
     float: right;
     margin-right: 0;
   }
+}
+.box.content, .big .box.content {
+  height: auto;
+  padding-bottom: 0;
+}
+@media (min-width: 61.25em) {
+  .box.content, .box.content + .box, .big .box.content, .big .box.content + .box {
+    height: 550px;
+    background-size: cover;
+  }
+}
+.box span {
+  margin-top: 0em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  margin-bottom: 0em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.box .inner {
+  margin: 0 1em;
+}
+.box:after {
+  transition: .2s;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
+.box:hover:after {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 footer {
