@@ -554,6 +554,9 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   float: right;
   margin-right: 0;
 }
+.box.title, .box.content {
+  background-color: #626e73;
+}
 .box span {
   margin-top: 0em;
   padding-top: 0.625em;
@@ -606,7 +609,6 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   width: 100%;
   padding-bottom: 100%;
   margin-right: 0;
-  background-color: #626e73;
 }
 @media (min-width: 61.25em) {
   .big .box {

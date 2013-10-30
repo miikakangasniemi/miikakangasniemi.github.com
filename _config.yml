@@ -1,6 +1,6 @@
 url: /
 baseurl:
-permalink: pretty
+permalink: /:categories/:title/
 name: Miika Kangasniemi.net
 menu:
     -

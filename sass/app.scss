@@ -175,6 +175,10 @@ nav {
     color: $white;
     box-shadow: rgba(0, 0, 0, 0.3) -1px 1px 3px;
 
+    &.title, &.content {
+        background-color: $grey;
+    }
+
     span {
         @include rhythm(0, 5/3, 5/3, 0);
         padding-left: 1em;
@@ -219,7 +223,6 @@ nav {
         width: 100%;
         padding-bottom: 100%;
         margin-right: 0;
-        background-color: $grey;
 
         @include at-breakpoint($break) {
             @include span-columns(2);
