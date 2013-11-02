@@ -45,6 +45,7 @@ prose:
             - name: layout
               field:
                 element: select
+                label: Layout
                 options:
                     - name: Default
                       value: default
@@ -57,10 +58,15 @@ prose:
                 element: text
                 label: URL
                 value: 
+            - name: show_title
+              field:
+                element: checkbox
+                label: Näytä otsikko
         _posts/yritysgrafiikka:
             - name: layout
               field:
                 element: select
+                label: Layout
                 options:
                     - name: Default
                       value: default
@@ -68,6 +74,10 @@ prose:
                       value: miika
                     - name: Category
                       value: category
+            - name: show_title
+              field:
+                element: checkbox
+                label: Näytä otsikko?
             - name: categories
               field:
                 element: hidden
