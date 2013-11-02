@@ -72,7 +72,7 @@ prose:
               field:
                 type: hidden
                 value: [yritysgrafiikka]
-            - name: box-image
+            - name: "box-image"
               field:
                 type: text
                 label: Neliön kuva
