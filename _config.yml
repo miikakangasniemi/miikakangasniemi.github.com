@@ -37,3 +37,28 @@ menu:
         imagename: miika.jpg
 
 exclude: [ 'sass', 'config.rb', 'Procfile', 'Thumbs.db' ]
+prose:
+    rooturl: _posts
+    media: media
+    metadata:
+        _posts:
+            - name: layout
+              field:
+                element: select
+                options:
+                    - name: Default
+                      value: default
+                    - name: Miika
+                      value: miika
+                    - name: Category
+                      value: category
+            - name: permalink
+              field:
+                element: text
+                label: URL
+                value: 
+        _posts/yritysgrafiikka:
+            - name: category
+              field:
+                type: hidden
+                value: yritysgrafiikka
