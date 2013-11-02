@@ -58,7 +58,22 @@ prose:
                 label: URL
                 value: 
         _posts/yritysgrafiikka:
-            - name: category
+            - name: layout
+              field:
+                element: select
+                options:
+                    - name: Default
+                      value: default
+                    - name: Miika
+                      value: miika
+                    - name: Category
+                      value: category
+            - name: permalink
+              field:
+                element: text
+                label: URL
+                value: 
+            - name: categories
               field:
                 type: hidden
-                value: yritysgrafiikka
+                value: [yritysgrafiikka]
