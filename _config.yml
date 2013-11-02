@@ -70,10 +70,10 @@ prose:
                       value: category
             - name: categories
               field:
-                type: hidden
+                element: hidden
                 value: [yritysgrafiikka]
             - name: "box-image"
               field:
-                type: text
+                element: text
                 label: Neliön kuva
                 placeholder: yritysgrafiikka/kuvan-nimi.png
