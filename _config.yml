@@ -62,6 +62,12 @@ prose:
               field:
                 element: checkbox
                 label: Näytä otsikko
+        _posts/static:
+            - name: imagename
+              field:
+                element: text
+                label: Iso kuva
+                placeholder: theme-images/miika-iso.png
         _posts/yritysgrafiikka:
             - name: layout
               field:
