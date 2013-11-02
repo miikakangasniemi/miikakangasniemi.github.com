@@ -68,12 +68,12 @@ prose:
                       value: miika
                     - name: Category
                       value: category
-            - name: permalink
-              field:
-                element: text
-                label: URL
-                value: 
             - name: categories
               field:
                 type: hidden
                 value: [yritysgrafiikka]
+            - name: box-image
+              field:
+                type: text
+                label: Neliön kuva
+                placeholder: yritysgrafiikka/kuvan-nimi.png
