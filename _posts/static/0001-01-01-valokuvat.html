@@ -1,7 +1,9 @@
 ---
 title: Valokuvat
-layout: default
+layout: category
 permalink: /valokuvat
 ---
 
-<p>Valokuvalistaus tulee tänne...</p>
+{% for post in site.categories.valokuvat %}
+    {% include category_post_box.html %}
+{% endfor %}
