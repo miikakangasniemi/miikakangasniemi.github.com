@@ -531,7 +531,7 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   height: 0;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.3) -1px 1px 3px;
 }
