@@ -1,0 +1,6 @@
+---
+title: IMG_2472
+layout: default
+categories: [valokuvat]
+box-image: valokuvat/IMG_2472.jpg
+---

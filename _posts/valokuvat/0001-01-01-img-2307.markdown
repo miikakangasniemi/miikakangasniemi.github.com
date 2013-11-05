@@ -1,0 +1,6 @@
+---
+title: IMG_2307
+layout: default
+categories: [valokuvat]
+box-image: valokuvat/IMG_2307.jpg
+---

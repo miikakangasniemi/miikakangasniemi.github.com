@@ -1,0 +1,6 @@
+---
+title: IMG_4411
+layout: default
+categories: [valokuvat]
+box-image: valokuvat/IMG_4411.jpg
+---

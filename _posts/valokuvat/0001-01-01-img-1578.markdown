@@ -1,0 +1,6 @@
+---
+title: IMG_1578
+layout: default
+categories: [valokuvat]
+box-image: valokuvat/IMG_1578.jpg
+---
