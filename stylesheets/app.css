@@ -585,6 +585,20 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
     background-size: cover;
   }
 }
+@media (max-width: 40em) {
+  .box.title {
+    width: 100%;
+    margin-right: 0;
+  }
+  .box.title ~ .box:nth-child(2n) {
+    float: left;
+    margin-right: 1.68067%;
+  }
+  .box.title ~ .box:nth-child(2n + 1) {
+    float: right;
+    margin-right: 0;
+  }
+}
 .box span {
   margin-top: 0em;
   padding-top: 0.625em;

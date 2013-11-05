@@ -196,6 +196,18 @@ nav {
         }
     }
 
+    @include at-breakpoint($wide-phone-break 40em) {
+        &.title {
+            width: 100%;
+            margin-right: 0;
+
+            ~.box {
+                @include remove-nth-omega(2n, $context: $total-columns);
+                @include nth-omega('2n + 1');
+            }
+        }
+    }
+
     span {
         @include rhythm(0, 5/3, 5/3, 0);
         padding-left: 1em;
