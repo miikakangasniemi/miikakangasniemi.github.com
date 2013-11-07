@@ -1,6 +1,7 @@
 ---
 title: IMG_4444
-layout: default
+layout: image
 categories: [valokuvat]
 box-image: valokuvat/IMG_4444.jpg
+image: valokuvat/IMG_4444.jpg
 ---

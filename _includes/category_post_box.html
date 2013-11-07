@@ -1,3 +1,3 @@
-<a class="box" href="{{ post.url }}" style="background-image: url('{{ site.baseurl }}/media/{{ post.box-image }}');">
-    {{ post.title }}
+<a class="box" href="{{ post.url }}" style="background-image: url('{{ site.baseurl }}/media/{{ post.box-image }}');"{% if post.image %} data-image="{{ site.baseurl }}/media/{{ post.image }}" data-lightbox-gallery="{{ post.categories }}"{% endif %}>
+    <span>{{ post.title }}</span>
 </a>

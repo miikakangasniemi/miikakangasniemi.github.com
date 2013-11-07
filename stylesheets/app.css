@@ -408,6 +408,11 @@ p {
   margin-bottom: 1.5em;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   *zoom: 1;
   max-width: 31em;
@@ -630,6 +635,10 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 .box:hover:after {
   background: rgba(0, 0, 0, 0.2);
+}
+
+[class^="nivo-"] {
+  box-sizing: content-box;
 }
 
 footer {

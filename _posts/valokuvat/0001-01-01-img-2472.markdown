@@ -1,6 +1,7 @@
 ---
 title: IMG_2472
-layout: default
+layout: image
 categories: [valokuvat]
 box-image: valokuvat/IMG_2472.jpg
+image: valokuvat/IMG_2472.jpg
 ---

@@ -1,6 +1,7 @@
 ---
 title: IMG_2307
-layout: default
+layout: image
 categories: [valokuvat]
 box-image: valokuvat/IMG_2307.jpg
+image: valokuvat/IMG_2307.jpg
 ---

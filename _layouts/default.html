@@ -15,6 +15,8 @@
         <meta name="description" content="{{ site.description }}">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href="{{ site.baseurl }}/javascripts/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/javascripts/nivo-lightbox/themes/default/default.css" rel="stylesheet">
         <link href="{{ site.baseurl }}/stylesheets/app.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -69,12 +71,14 @@
             </div>
         </footer>
 
-        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="{{ site.baseurl }}/javascripts/nivo-lightbox/nivo-lightbox.min.js"></script>
         {% if page.javascript %}
         {% for js in page.javascript %}
-        <script src="/javascripts/{{ js }}"></script>
+        <script src="{{ site.baseurl }}/javascripts/{{ js }}"></script>
         {% endfor %}
         {% endif %}
-        <script src="/javascripts/site.js"></script>-->
+        <script src="{{ site.baseurl }}/javascripts/app.js"></script>
     </body>
 </html>

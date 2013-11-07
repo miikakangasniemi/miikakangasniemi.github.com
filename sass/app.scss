@@ -44,6 +44,11 @@ p {
     @include rhythm(0, 0, 0, 4);
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     @include container($total-columns);
 
@@ -240,6 +245,10 @@ nav {
     &:hover:after {
         background: rgba(0, 0, 0, 0.2);
     }
+}
+
+[class^="nivo-"] {
+    box-sizing: content-box;
 }
 
 footer {
