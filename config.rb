@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 require "susy"
-
+require 'autoprefixer-rails'
+require 'csso'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
@@ -18,9 +19,24 @@ javascripts_dir = "javascripts"
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
 
+# This controls whether we use CSSO
+optimize = false
+
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+on_stylesheet_saved do |file|
+	css = File.read(file)
+	File.open(file, 'w') do |io|
+		compiled = AutoprefixerRails.compile(css, ["last 2 versions", "bb 10", "android 4", "ie 8", "> 1%"])
+		if optimize
+			io << Csso.optimize(compiled)
+		else
+			io << compiled
+		end
+	end
+end
