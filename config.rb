@@ -32,7 +32,7 @@ optimize = false
 on_stylesheet_saved do |file|
 	css = File.read(file)
 	File.open(file, 'w') do |io|
-		compiled = AutoprefixerRails.compile(css, ["last 2 versions", "bb 10", "android 4", "ie 8", "> 1%"])
+		compiled = AutoprefixerRails.compile(css)
 		if optimize
 			io << Csso.optimize(compiled)
 		else
