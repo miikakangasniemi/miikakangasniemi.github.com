@@ -745,6 +745,12 @@ a.box:hover:after {
   box-sizing: content-box;
 }
 
+.nivo-lightbox-theme-default.nivo-lightbox-overlay {
+  background: #191919;
+  /* 90% black on white. */
+  background: rgba(0, 0, 0, 0.9);
+}
+
 footer {
   margin-top: 3.375em;
   border-top-style: solid;

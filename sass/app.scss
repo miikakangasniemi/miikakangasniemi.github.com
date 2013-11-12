@@ -253,6 +253,13 @@ a.box {
     box-sizing: content-box;
 }
 
+.nivo-lightbox-theme-default {
+    &.nivo-lightbox-overlay {
+        background: #191919; /* 90% black on white. */
+        background: rgba(0, 0, 0, 0.9);
+    }
+}
+
 footer {
     @include leader(9);
     @include leading-border(3px, 4);
