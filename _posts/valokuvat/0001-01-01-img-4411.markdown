@@ -4,4 +4,5 @@ layout: image
 categories: [valokuvat]
 box-image: valokuvat/IMG_4411.jpg
 image: valokuvat/IMG_4411.jpg
+hide_title_on_box: true
 ---
