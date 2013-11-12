@@ -722,7 +722,7 @@ nav .has-children.path > ul > li {
   margin: 0 1em;
 }
 
-.box:after {
+a.box:after {
   -webkit-transition: .2s;
   transition: .2s;
   content: "";
@@ -735,7 +735,7 @@ nav .has-children.path > ul > li {
   z-index: 1;
 }
 
-.box:hover:after {
+a.box:hover:after {
   background: rgba(0, 0, 0, 0.2);
 }
 

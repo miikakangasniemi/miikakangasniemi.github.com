@@ -229,7 +229,9 @@ nav {
     .inner {
         margin: 0 1em;
     }
+}
 
+a.box {
     &:after {
         transition: .2s;
         content: "";
