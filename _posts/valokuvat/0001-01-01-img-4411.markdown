@@ -2,7 +2,7 @@
 title: IMG_4411
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/IMG_4411.jpg
+box-image: valokuvat/IMG_4411-kuutio.jpg
 image: valokuvat/IMG_4411.jpg
 hide_title_on_box: true
 ---
