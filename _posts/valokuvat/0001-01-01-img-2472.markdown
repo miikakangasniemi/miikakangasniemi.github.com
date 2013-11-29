@@ -2,7 +2,7 @@
 title: IMG_2472
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/IMG_2472.jpg
+box-image: valokuvat/IMG_2472-kuutio.jpg
 image: valokuvat/IMG_2472.jpg
 hide_title_on_box: true
 ---

@@ -2,7 +2,7 @@
 title: IMG_4444
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/IMG_4444.jpg
+box-image: valokuvat/IMG_4444-kuutio.jpg
 image: valokuvat/IMG_4444.jpg
 hide_title_on_box: true
 ---

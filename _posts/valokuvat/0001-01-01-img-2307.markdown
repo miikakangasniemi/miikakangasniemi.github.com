@@ -2,7 +2,7 @@
 title: IMG_2307
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/IMG_2307.jpg
+box-image: valokuvat/IMG_2307-kuutio.jpg
 image: valokuvat/IMG_2307.jpg
 hide_title_on_box: true
 ---

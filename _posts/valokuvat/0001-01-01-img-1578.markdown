@@ -2,7 +2,7 @@
 title: IMG_1578
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/IMG_1578.jpg
+box-image: valokuvat/IMG_1578-kuutio.jpg
 image: valokuvat/IMG_1578.jpg
 hide_title_on_box: true
 ---
