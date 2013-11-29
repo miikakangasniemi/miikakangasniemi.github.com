@@ -1,0 +1,8 @@
+---
+title: IMG_5869
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_5869-k.jpg
+image: valokuvat/IMG_5869.jpg
+hide_title_on_box: true
+---
