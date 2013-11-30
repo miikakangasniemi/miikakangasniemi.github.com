@@ -1,5 +1,5 @@
 ---
-title: Rovaniemen helluntaiseu&shy;ra&shy;kun&shy;ta
+title: Rovaniemen helluntai&shy;seurakunta
 layout: list_files
 categories: [yritysgrafiikka]
 box-image: yritysgrafiikka/rovaniemen-helluntaiseurakunta.png

@@ -1,0 +1,9 @@
+---
+title: Jäniskarisaaret, 2008
+layout: image
+categories: [taulut]
+box-image: taulut/Jäniskarinsaaret-2008-kuutio.jpg
+image: taulut/Jäniskarinsaaret-2008.jpg
+hide_title_on_box: true
+lightbox_title: Jäniskarinsaaret, 2008, myyty
+---
