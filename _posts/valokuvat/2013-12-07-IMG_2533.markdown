@@ -1,0 +1,8 @@
+---
+title: IMG_2533
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_2533-kuutio.jpg
+image: valokuvat/IMG_2533.jpg
+hide_title_on_box: true
+---

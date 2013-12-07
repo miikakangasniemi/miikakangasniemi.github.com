@@ -1,0 +1,8 @@
+---
+title: IMG_5918
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_5918-kuutio.jpg
+image: valokuvat/IMG_5918.jpg
+hide_title_on_box: true
+---
