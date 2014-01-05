@@ -1,0 +1,15 @@
+---
+title: Sano se - Oikaraisen kylälehti
+layout: list_files
+categories: [taitot]
+box-image: taitot/sano-se/nelio.jpg
+hide_title_on_box: true
+disable_title_box: true
+enable_plain_title: true
+files:
+  - title: Sano se 2011
+    file: taitot/sano-se/sano-se-2011.pdf
+  - title: Sano se 2012
+    file: taitot/sano-se/sano-se-2012.pdf
+---
+
