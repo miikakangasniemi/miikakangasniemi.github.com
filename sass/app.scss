@@ -249,6 +249,10 @@ a.box {
     }
 }
 
+.fake-li {
+    display: list-item;
+}
+
 [class^="nivo-"] {
     box-sizing: content-box;
 }

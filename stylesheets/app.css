@@ -739,6 +739,10 @@ a.box:hover:after {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.fake-li {
+  display: list-item;
+}
+
 [class^="nivo-"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;

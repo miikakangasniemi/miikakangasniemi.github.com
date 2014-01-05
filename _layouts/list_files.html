@@ -3,7 +3,7 @@ layout: category
 ---
 
 {% for file in page.files %}
-    <a class="{% if file.box-image %}box{% endif %}" href="{{ site.baseurl }}/media/{{ file.file }}" style="background-image: url('{{ site.baseurl }}/media/{{ file.box-image }}');">
+    <a class="{% if file.box-image %}box{% else %}fake-li{% endif %}" href="{{ site.baseurl }}/media/{{ file.file }}" style="background-image: url('{{ site.baseurl }}/media/{{ file.box-image }}');">
         {% unless file.hide_title_on_box %}<span>{{ file.title }}</span>{% endunless %}
     </a>
 {% endfor %}
