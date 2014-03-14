@@ -2,6 +2,6 @@
 title: S.O.W. EPIC (editointi)
 layout: video
 categories: [videot]
-box-image: videot/SOW.jpg
+box-image: videot/sow.jpg
 video: qUJhz_dHck4
 ---
