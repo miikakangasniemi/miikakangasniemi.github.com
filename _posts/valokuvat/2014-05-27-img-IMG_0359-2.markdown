@@ -1,0 +1,8 @@
+---
+title: IMG_0359
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_0359-kuutio.jpg
+image: valokuvat/IMG_0359.jpg
+hide_title_on_box: true
+---
