@@ -1,0 +1,8 @@
+---
+title: IMG_0623
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_0623-kuutio.jpg
+image: valokuvat/IMG_0623.jpg
+hide_title_on_box: true
+---
