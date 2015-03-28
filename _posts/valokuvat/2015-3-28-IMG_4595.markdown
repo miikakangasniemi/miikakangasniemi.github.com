@@ -1,0 +1,8 @@
+---
+title: IMG_4595
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_4595-kuutio.jpg
+image: valokuvat/IMG_4595.jpg
+hide_title_on_box: true
+---

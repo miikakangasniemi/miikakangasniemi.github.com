@@ -1,0 +1,8 @@
+---
+title: IMG_4735
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_4735-kuutio.jpg
+image: valokuvat/IMG_4735.jpg
+hide_title_on_box: true
+---
