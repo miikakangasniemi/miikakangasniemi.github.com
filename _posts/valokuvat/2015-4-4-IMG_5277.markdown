@@ -1,0 +1,8 @@
+---
+title: IMG_5277
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/IMG_5277-kuutio.jpg
+image: valokuvat/IMG_5277.jpg
+hide_title_on_box: true
+---
