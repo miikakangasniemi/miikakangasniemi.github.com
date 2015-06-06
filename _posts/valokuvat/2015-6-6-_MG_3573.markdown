@@ -1,0 +1,8 @@
+---
+title: _MG_3573
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/_MG_3573-kuutio.jpg
+image: valokuvat/_MG_3573.jpg
+hide_title_on_box: true
+---
