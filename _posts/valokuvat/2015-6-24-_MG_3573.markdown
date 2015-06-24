@@ -1,8 +1,8 @@
 --
-title: _MG_3803.jpg
+title: MG_3803.jpg
 layout: image
 categories: [valokuvat]
-box-image: valokuvat/_MG_3803-kuutio.jpg
-image: valokuvat/_MG_3803.jpg
+box-image: valokuvat/MG_3803-kuutio.jpg
+image: valokuvat/MG_3803.jpg
 hide_title_on_box: true
 ---
