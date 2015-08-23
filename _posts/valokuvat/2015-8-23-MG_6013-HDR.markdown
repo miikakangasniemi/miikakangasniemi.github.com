@@ -1,0 +1,8 @@
+---
+title: MG_6013-HDR
+layout: image
+categories: [valokuvat]
+box-image: valokuvat/MG_6013-HDR-kuutio.jpg
+image: valokuvat/MG_6013-HDR.jpg
+hide_title_on_box: true
+---
