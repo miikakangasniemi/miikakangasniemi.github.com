@@ -1,12 +1,16 @@
 $base-font-size: 16px;
 $base-line-height: 6px;
 
-$total-columns: 2;
-$column-width: 14.375em;
-$gutter-width: 0.750em;
-$grid-padding: $gutter-width;
-$wide-phone-break: 3;
-$break: 4;
+$column-width: 390px;
+$gutter: 15px;
+
+$susy: (
+  columns: 3,
+  column-width: $column-width,
+  gutters: $gutter/$column-width
+);
+
+$box-title-target-font-size: 22px;
 
 $white: #ffffff;
 $black: #000000;
@@ -14,3 +18,6 @@ $grey: #626e73;
 $red: #e46262;
 $darker-white: #b3afaf;
 $dark: #272735;
+
+$blue: #213a71;
+$blue-transparent: transparentize($blue, .4);

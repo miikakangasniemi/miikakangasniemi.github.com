@@ -1,304 +1,258 @@
 @import "settings";
 @import "normalize";
+@import "susy";
 @import "compass/typography/text/replacement";
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3";
-@import "susyone";
 
 @include border-box-sizing;
 
 @include establish-baseline;
 
 html {
-    @include adjust-leading-to(4);
+  @include adjust-leading-to(4);
 }
 
 body {
-    background: $white;
-    font-family: Verdana, sans-serif;
-    font-weight: 400;
-    color: $black;
+  background: $white;
+  font-family: Verdana, sans-serif;
+  font-weight: 400;
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 h1 {
-    @include adjust-font-size-to(24px);
-    @include rhythm(4, 0, 0, 2, 24px);
+  @include adjust-font-size-to(24px);
+  @include rhythm(4, 0, 0, 2, 24px);
 }
 
 h2 {
-    @include adjust-font-size-to(20px);
-    @include rhythm(4, 0, 0, 2, 20px);
+  @include adjust-font-size-to(20px);
+  @include rhythm(4, 0, 0, 2, 20px);
 }
 
 a {
-    color: $red;
+  color: $red;
 }
 
 p {
-    @include rhythm(0, 0, 0, 4);
+  @include rhythm(0, 0, 0, 4);
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-    @include container($total-columns);
-
-    @include at-breakpoint($wide-phone-break) {
-        @include set-container-width;
-    }
-
-    @include at-breakpoint($break) {
-        @include set-container-width;
-    }
+  max-width: 1637px;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
-header {
-    h1 {
-        @include adjust-font-size-to(33px);
-        @include rhythm(4, 0, 0, 1, 33px);
 
-        a {
-            display: block;
-            font-family: "proxima-nova", sans-serif;
-            font-weight: 100;
-            color: $black;
-            text-decoration: none;
-        }
+header {
+  h1 {
+    @include adjust-font-size-to(33px);
+    @include rhythm(4, 0, 0, 1, 33px);
+
+    a {
+      display: block;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 100;
+      color: $black;
+      text-decoration: none;
     }
+  }
 }
 
 nav {
-    @include rhythm(0, 2, 2, 0);
+  @include rhythm(0, 2, 2, 0);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      display: none;
+    }
+  }
 
-        ul {
-            display: none;
+  li {
+    display: block;
+  }
+
+  .current, .path {
+    font-weight: 700;
+
+    &>ul {
+      li {
+        font-weight: 400;
+
+        &.current, &.path {
+          font-weight: 700;
         }
+      }
     }
+  }
 
-    li {
+  a {
+    @include adjust-font-size-to(14px);
+    display: block;
+    text-decoration: none;
+  }
+
+  .has-children.current, .has-children.path {
+    display: block;
+
+    &>ul {
+      display: block;
+
+      &>li {
         display: block;
+      }
     }
-
-    .current, .path {
-        font-weight: 700;
-
-        &>ul {
-            li {
-                font-weight: 400;
-
-                &.current, &.path {
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-
-    a {
-        @include adjust-font-size-to(14px);
-        display: block;
-        text-decoration: none;
-    }
-
-    .has-children.current, .has-children.path {
-        display: block;
-
-        &>ul {
-            display: block;
-
-            &>li {
-                display: block;
-            }
-        }
-    }
+  }
 }
 
 .main-nav {
-    @include trailer(9);
-    background: $grey;
+  @include trailer(9);
+  background: $grey;
 
-    a {
-        color: $white;
+  a {
+    color: $white;
+  }
+
+  @media (min-width: 600px) {
+    li {
+      display: inline-block;
+      padding-right: 1.25em;
+
+      &.has-children.current, &.has-children.path {
+        display: inline-block;
+        vertical-align: top;
+      }
     }
+  }
+}
 
-    @include at-breakpoint($wide-phone-break) {
-        li {
-            display: inline-block;
-            padding-right: 1.25em;
-
-            &.has-children.current, &.has-children.path {
-                display: inline-block;
-                vertical-align: top;
-            }
-        }
-    }
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .boxes {
-    @include pie-clearfix;
-    @include trailer(-2);
+  overflow: hidden;
+  font-size: $box-title-target-font-size / 1200px * 100vw;
+
+  @media (min-width: #{1200px + $gutter * 2}) {
+    @include adjust-font-size-to($box-title-target-font-size, 4);
+  }
 }
 
 .box {
-    @include span-columns(1);
-    @include nth-omega(2n);
-    @include trailer(2);
-    padding-bottom: columns(1);
-    position: relative;
-    display: block;
-    height: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $white;
-    box-shadow: rgba(0, 0, 0, 0.3) -1px 1px 3px;
-
-    &.title, &.content {
-        background-color: $grey;
-    }
-
-    @include at-breakpoint($break) {
-        @include span-columns(1);
-        @include remove-nth-omega(2n, $context: $total-columns);
-        @include nth-omega(4n);
-        padding-bottom: columns(1);
-    }
-
-    .big & {
-        width: 100%;
-        padding-bottom: 100%;
-        margin-right: 0;
-
-        @include at-breakpoint($break) {
-            @include span-columns(2);
-            @include nth-omega(2n);
-            padding-bottom: columns(2);
-        }
-    }
-
-    &.content, .big &.content {
-        height: auto;
-        padding-bottom: 0;
-
-        @include at-breakpoint($break) {
-            &, +.box {
-                height: 550px;
-                background-size: cover;
-            }
-        }
-    }
-
-    @include at-breakpoint($wide-phone-break 40em) {
-        &.title {
-            width: 100%;
-            margin-right: 0;
-
-            ~.box {
-                @include remove-nth-omega(2n, $context: $total-columns);
-                @include nth-omega('2n + 1');
-            }
-        }
-    }
-
-    span {
-        @include rhythm(0, 5/3, 5/3, 0);
-        padding-left: 1em;
-        padding-right: 1em;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: auto;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 2;
-    }
-
-    .inner {
-        margin: 0 1em;
-    }
+  @include span(1 of 3);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  height: 0;
+  padding-bottom: 260px / 390px * span(1 of 3);
+  margin-bottom: gutter(3);
+  position: relative;
 }
 
-a.box {
-    &:after {
-        transition: .2s;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        background: transparent;
-        z-index: 1;
-    }
+.box--tall {
+  padding-bottom: 535px / 390px * span(1 of 3);
+}
 
-    &:hover:after {
-        background: rgba(0, 0, 0, 0.2);
-    }
+.box--wide {
+  @include span(2 of 3);
+  padding-bottom: 260px / 795px * span(2 of 3);
+}
+
+.box:nth-child(3),
+.box:nth-child(4),
+.box:last-child {
+  @include last;
+}
+
+.box__title {
+  @include adjust-font-size-to($box-title-target-font-size, 4, $box-title-target-font-size);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: rhythm(2, $box-title-target-font-size);
+  background: $blue-transparent;
+  color: $white;
+  transition: background .5s;
+
+  .box:hover & {
+    background: $blue;
+  }
+}
+
+.box__title--opaque {
+  background: transparentize($blue, .1);
 }
 
 .fake-li {
-    display: list-item;
+  display: list-item;
 }
 
 [class^="nivo-"] {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .nivo-lightbox-theme-default {
-    &.nivo-lightbox-overlay {
-        background: #191919; /* 90% black on white. */
-        background: rgba(0, 0, 0, 0.9);
-    }
+  &.nivo-lightbox-overlay {
+    background: #191919; /* 90% black on white. */
+    background: rgba(0, 0, 0, 0.9);
+  }
 }
 
 footer {
-    @include leader(9);
-    @include leading-border(3px, 4);
-    clear: both;
-    border-top-color: $grey;
-    text-align: center;
+  @include leader(9);
+  @include leading-border(3px, 4);
+  clear: both;
+  border-top-color: $grey;
+  text-align: center;
 }
 
 form {
-    label {
-        @include pie-clearfix;
-        display: block;
-        margin: 10px 0;
+  label {
+    display: block;
+    margin: 10px 0;
+    overflow: hidden;
 
-        b {
-            @include span-columns(1, 4);
-            text-align: right;
-        }
+    b {
+      @include span(1 of 4);
+      text-align: right;
+    }
 
-        input, textarea {
-            @include span-columns(3 omega, 4);
-        }
+    input, textarea {
+      @include span(last 3 of 4);
+      }
     }
 
     .actions {
-        @include push(1, 4);
+      @include push(1 of 4);
     }
-}
+  }
 
 
-.btn, input[type="submit"] {
+  .btn, input[type="submit"] {
     background: $red;
     color: $dark;
     border: none;
     padding: .3em .8em;
     line-height: 1;
     display: inline-block;
-}
+  }
+

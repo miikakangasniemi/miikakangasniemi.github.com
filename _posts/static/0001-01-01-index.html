@@ -40,16 +40,17 @@ boxes:
         url: graafinen-suunnittelu
         image_name: graafinen-suunnittelu.jpg
         variant: normal
+        title_variant: opaque
 
 ---
 
 <div class="boxes">
     {% for box in page.boxes %}
-    <a
-     class="box  box--{{ box.variant }}"
-     href="{{ site.baseurl }}/{{ box.url }}"
-     style="background-image: url('{{ site.baseurl }}/media/theme-images/{{ box.image_name }}');">
-        <span>{{ box.title }}</span>
-    </a>
+        <a
+         class="box  box--{{ box.variant }}"
+         href="{{ site.baseurl }}/{{ box.url }}"
+         style="background-image: url('{{ site.baseurl }}/media/home-boxes/{{ box.image_name }}');">
+            <span class="box__title {% if box.title_variant %}box__title--{{ box.title_variant }}{% endif %}">{{ box.title }}</span>
+        </a>
     {% endfor %}
 </div>
