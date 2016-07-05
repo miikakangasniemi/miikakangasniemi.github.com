@@ -17,6 +17,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link href="{{ site.baseurl }}/javascripts/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
         <link href="{{ site.baseurl }}/javascripts/nivo-lightbox/themes/default/default.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/javascripts/slick/slick.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/javascripts/slick/slick-theme.css" rel="stylesheet">
         <link href="{{ site.baseurl }}/stylesheets/app.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -67,6 +69,14 @@
             </div>
         </nav>
 
+        {% if page.slides %}
+            <div class="slider">
+                {% for slide in page.slides %}
+                <img src="{{ site.baseurl }}/media/home-slides/{{ slide.image_name }}">
+                {% endfor %}
+            </div>
+        {% endif %}
+
         <div class="container">
             <div class="main">
                 <section>
@@ -84,6 +94,7 @@
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="{{ site.baseurl }}/javascripts/nivo-lightbox/nivo-lightbox.min.js"></script>
+        <script src="{{ site.baseurl }}/javascripts/slick/slick.min.js"></script>
         {% if page.javascript %}
         {% for js in page.javascript %}
         <script src="{{ site.baseurl }}/javascripts/{{ js }}"></script>

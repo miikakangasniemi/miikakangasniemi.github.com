@@ -492,6 +492,10 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   margin: 0 auto;
 }
 
+.slider {
+  margin-bottom: 1.875em;
+}
+
 .boxes {
   overflow: hidden;
   font-size: 1.83333vw;

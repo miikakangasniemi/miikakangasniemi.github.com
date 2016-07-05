@@ -147,6 +147,10 @@ nav {
   margin: 0 auto;
 }
 
+.slider {
+  margin-bottom: rhythm(5);
+}
+
 .boxes {
   overflow: hidden;
   font-size: $box-title-target-font-size / 1200px * 100vw;
