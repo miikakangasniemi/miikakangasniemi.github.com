@@ -8,6 +8,7 @@
       })
       .nivoLightbox();
     $(".slider").slick({
+      arrows: false,
       autoplay: true
     });
   });
