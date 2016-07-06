@@ -21,3 +21,7 @@ $dark: #272735;
 
 $blue: #213a71;
 $blue-transparent: transparentize($blue, .4);
+
+@function em($pixels, $context: $base-font-size) {
+  @return $pixels / $context * 1em;
+}

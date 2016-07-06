@@ -4,38 +4,14 @@ permalink: /:categories/:title/
 name: Miika Kangasniemi.net
 menu:
     -
-        text: Valokuvat
-        url: /valokuvat
-        imagename: valokuvat.jpg
+        text: Portfolio
+        url: /#portfolio
     -
-        text: Taulut
-        url: /taulut
-        imagename: taulut.jpg
+        text: Hinnat
+        url: /#hinnat
     -
-        text: Videot
-        url: /videot
-        imagename: videot.jpg
-    -
-        text: Taitot
-        url: /taitot
-        imagename: taitot.jpg
-    -
-        text: Yritysgrafiikka
-        url: /yritysgrafiikka
-        imagename: yritysgrafiikka.jpg
-    -
-        text: Julisteet
-        url: /julisteet
-        imagename: julisteet.jpg
-    -
-        text: WWW-sivut
-        url: /www-sivut
-        imagename: www-sivut.jpg
-    -
-        text: Miika Kangasniemi
-        url: /miika-kangasniemi
-        imagename: miika.jpg
-
+        text: Yhteystiedot
+        url: /#yhteystiedot
 exclude: [ 'sass', 'config.rb', 'Procfile', 'Thumbs.db' ]
 prose:
     rooturl: _posts

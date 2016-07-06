@@ -55,20 +55,13 @@ img {
   padding-right: $gutter;
 }
 
+.logo {
+  float: left;
+  margin-right: em(60px);
+}
 
-header {
-  h1 {
-    @include adjust-font-size-to(33px);
-    @include rhythm(4, 0, 0, 1, 33px);
-
-    a {
-      display: block;
-      font-family: "proxima-nova", sans-serif;
-      font-weight: 100;
-      color: $black;
-      text-decoration: none;
-    }
-  }
+.logo__img {
+   width: em(138px);
 }
 
 nav {
@@ -122,17 +115,28 @@ nav {
 }
 
 .main-nav {
-  @include trailer(9);
-  background: $grey;
+  background: $white;
+  box-shadow: 0 em(2px) em(13px) rgba(0, 0, 0, .14);
+  mix-blend-mode: multiply;
+  position: relative;
+  z-index: 10000;
+
+  .container {
+     overflow: hidden;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+  }
 
   a {
-    color: $white;
+    color: $blue;
   }
 
   @media (min-width: 600px) {
     li {
       display: inline-block;
       padding-right: 1.25em;
+      float: left;
 
       &.has-children.current, &.has-children.path {
         display: inline-block;

@@ -411,20 +411,13 @@ img {
   padding-right: 15px;
 }
 
-header h1 {
-  font-size: 2.0625em;
-  line-height: 1.27273em;
-  margin-top: 0.72727em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.18182em;
+.logo {
+  float: left;
+  margin-right: 3.75em;
 }
-header h1 a {
-  display: block;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 100;
-  color: #000000;
-  text-decoration: none;
+
+.logo__img {
+  width: 8.625em;
 }
 
 nav {
@@ -470,16 +463,31 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 
 .main-nav {
-  margin-bottom: 3.375em;
-  background: #626e73;
+  background: #ffffff;
+  box-shadow: 0 0.125em 0.8125em rgba(0, 0, 0, 0.14);
+  mix-blend-mode: multiply;
+  position: relative;
+  z-index: 10000;
+}
+.main-nav .container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-nav a {
-  color: #ffffff;
+  color: #213a71;
 }
 @media (min-width: 600px) {
   .main-nav li {
     display: inline-block;
     padding-right: 1.25em;
+    float: left;
   }
   .main-nav li.has-children.current, .main-nav li.has-children.path {
     display: inline-block;

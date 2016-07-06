@@ -54,16 +54,17 @@
 
         <header>
             <div class="container">
-                <h1>
-                    <a href="{{ site.url }}">
-                        {{ site.name }}
-                    </a>
-                </h1>
             </div>
         </header>
 
         <nav class="main-nav">
             <div class="container">
+                <a class="logo" href="{{ site.url }}">
+                    <img class="logo__img"
+                         src="{{ site.baseurl }}/media/app/logo.svg"
+                         title="Valokuvaaja Miika Kangasniemi"
+                         alt="Valokuvaaja Miika Kangasniemi">
+                </a>
                 {% assign menu_items = site.menu %}
                 {% include navigation_list.html %}
             </div>
