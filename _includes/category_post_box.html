@@ -1,3 +1,12 @@
-<a class="box" href="{% if post.video %}https://www.youtube.com/watch?v={{ post.video }}{% elsif post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}" style="background-image: url('{{ site.baseurl }}/media/{{ post.box-image }}');"{% if post.image %} data-image="{{ site.baseurl }}/media/{{ post.image }}" data-lightbox-gallery="{{ post.categories }}"{% endif %}{% if post.lightbox_title %} title="{{ post.lightbox_title }}"{% endif %}{% if post.blank or post.video %} target="_blank"{% endif %}>
-    {% unless post.hide_title_on_box %}<span>{{ post.title }}</span>{% endunless %}
+<a
+  class="box"
+  href="{% if post.video %}https://www.youtube.com/watch?v={{ post.video }}{% elsif post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}"
+  style="background-image: url('{{ site.baseurl }}/media/{{ post.box-image }}');"
+  {% if post.image %} data-image="{{ site.baseurl }}/media/{{ post.image }}" data-lightbox-gallery="{{ post.categories }}"{% endif %}
+  {% if post.lightbox_title %} title="{{ post.lightbox_title }}"{% endif %}
+  {% if post.blank or post.video %} target="_blank"{% endif %}
+  >
+  {% unless post.hide_title_on_box %}
+    <span class="box__title">{{ post.title }}</span>
+  {% endunless %}
 </a>
