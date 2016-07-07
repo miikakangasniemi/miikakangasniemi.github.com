@@ -131,9 +131,18 @@ nav {
 .main-nav {
   background: $white;
   box-shadow: 0 em(2px) em(13px) rgba(0, 0, 0, .14);
-  mix-blend-mode: multiply;
   position: relative;
   z-index: 10000;
+  transition: transform .25s;
+  width: 100%;
+
+  &.stuck {
+     position: fixed;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
 
   .container {
      overflow: hidden;
