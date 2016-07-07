@@ -399,10 +399,23 @@ p {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
+p.ingress {
+  text-align: center;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 img {
   width: 100%;
   height: auto;
+}
+
+hr {
+  margin: 2.25em 0;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #ffffff;
 }
 
 .container {
@@ -465,9 +478,20 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 .main-nav {
   background: #ffffff;
   box-shadow: 0 0.125em 0.8125em rgba(0, 0, 0, 0.14);
-  mix-blend-mode: multiply;
   position: relative;
   z-index: 10000;
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  width: 100%;
+}
+.main-nav.stuck {
+  position: fixed;
+}
+.main-nav.hidden {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 .main-nav .container {
   overflow: hidden;
@@ -497,7 +521,7 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 
 .main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1.875em auto;
 }
 
 .slider {
@@ -583,12 +607,14 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 
 footer {
   margin-top: 3.375em;
-  border-top-width: 0.1875em;
-  border-top-style: solid;
-  padding-top: 1.3125em;
+  padding: 3.375em 0;
   clear: both;
-  border-top-color: #626e73;
   text-align: center;
+  background: #213a71;
+  color: #ffffff;
+}
+footer ul {
+  list-style: none;
 }
 
 form label {
