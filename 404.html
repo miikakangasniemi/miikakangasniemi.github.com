@@ -17,6 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link href="/javascripts/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
         <link href="/javascripts/nivo-lightbox/themes/default/default.css" rel="stylesheet">
+        <link href="/javascripts/slick/slick.css" rel="stylesheet">
         <link href="/stylesheets/app.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -50,18 +51,14 @@
               Google Chrome Frame</a> kokeaksesi tämän sivuston
         </p><![endif]-->
 
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="/">
-                        Miika Kangasniemi.net
-                    </a>
-                </h1>
-            </div>
-        </header>
-
         <nav class="main-nav">
             <div class="container">
+                <a class="logo" href="/">
+                    <img class="logo__img"
+                         src="/media/app/logo.svg"
+                         title="Valokuvaaja Miika Kangasniemi"
+                         alt="Valokuvaaja Miika Kangasniemi">
+                </a>
                 
                 <ul>
     
@@ -71,7 +68,7 @@
 
 
         <li class=" ">
-            <a href="/valokuvat">Valokuvat</a>
+            <a href="/#portfolio">Portfolio</a>
             
         </li>
     
@@ -81,7 +78,7 @@
 
 
         <li class=" ">
-            <a href="/taulut">Taulut</a>
+            <a href="/#hinnat">Hinnat</a>
             
         </li>
     
@@ -91,57 +88,7 @@
 
 
         <li class=" ">
-            <a href="/videot">Videot</a>
-            
-        </li>
-    
-        
-
-
-
-
-        <li class=" ">
-            <a href="/taitot">Taitot</a>
-            
-        </li>
-    
-        
-
-
-
-
-        <li class=" ">
-            <a href="/yritysgrafiikka">Yritysgrafiikka</a>
-            
-        </li>
-    
-        
-
-
-
-
-        <li class=" ">
-            <a href="/julisteet">Julisteet</a>
-            
-        </li>
-    
-        
-
-
-
-
-        <li class=" ">
-            <a href="/www-sivut">WWW-sivut</a>
-            
-        </li>
-    
-        
-
-
-
-
-        <li class=" ">
-            <a href="/miika-kangasniemi">Miika Kangasniemi</a>
+            <a href="/#yhteystiedot">Yhteystiedot</a>
             
         </li>
     
@@ -153,8 +100,8 @@
         <div class="container">
             <div class="main">
                 <section>
-            <h1>404 - sivua ei löydy</h1>
-            <p>Etsimääsi sivua ei löydy. Tulitko sivuille vanhan linkin kautta? Valitse ylhäältä sivu tai mene <a href="/">etusivulle</a>.</p>
+                    <h1>404 - sivua ei löydy</h1>
+                    <p>Etsimääsi sivua ei löydy. Tulitko sivuille vanhan linkin kautta? Valitse ylhäältä sivu tai mene <a href="/">etusivulle</a>.</p>
                 </section>
 
             </div>
@@ -162,14 +109,18 @@
 
         <footer>
             <div class="container">
-                <p>puh. 040 834 3161 – s-posti miika.kangasniemi(ät)gmail.com</p>
+                <p>puh. 040 834 3161 – s-posti miika(at)miikakangasniemi.net</p>
             </div>
         </footer>
 
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/javascripts/underscore-min.js"></script>
         <script src="/javascripts/nivo-lightbox/nivo-lightbox.min.js"></script>
+        <script src="/javascripts/slick/slick.min.js"></script>
+        <script src="/javascripts/scrolldirection.js"></script>
         
         <script src="/javascripts/app.js"></script>
     </body>
 </html>
+
