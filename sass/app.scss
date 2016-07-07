@@ -42,11 +42,25 @@ a {
 
 p {
   @include rhythm(0, 0, 0, 4);
+
+  &.ingress {
+    text-align: center;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+hr {
+  margin: rhythm(6) 0;
+  height: 0;
+  border: 0;
+  border-top: 1px solid $white;
 }
 
 .container {
@@ -226,11 +240,16 @@ nav {
 }
 
 footer {
-  @include leader(9);
-  @include leading-border(3px, 4);
+  margin-top: rhythm(9);
+  padding: rhythm(9) 0;
   clear: both;
-  border-top-color: $grey;
   text-align: center;
+  background: $blue;
+  color: $white;
+
+  ul {
+     list-style: none;
+  }
 }
 
 form {
