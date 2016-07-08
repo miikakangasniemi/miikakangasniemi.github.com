@@ -1,8 +1,0 @@
----
-title: IMG_5993
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_5993-k.jpg
-image: valokuvat/IMG_5993.jpg
-hide_title_on_box: true
----

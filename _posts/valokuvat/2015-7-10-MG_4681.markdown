@@ -1,8 +1,0 @@
----
-title: MG_4681
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/MG_4681-kuutio.jpg
-image: valokuvat/MG_4681.jpg
-hide_title_on_box: true
----

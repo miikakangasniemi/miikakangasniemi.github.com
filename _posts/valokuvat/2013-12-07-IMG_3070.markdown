@@ -1,8 +1,0 @@
----
-title: IMG_3070
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_3070-kuutio.jpg
-image: valokuvat/IMG_3070.jpg
-hide_title_on_box: true
----

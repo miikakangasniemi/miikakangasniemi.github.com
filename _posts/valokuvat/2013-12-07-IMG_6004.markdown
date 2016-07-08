@@ -1,8 +1,0 @@
----
-title: IMG_6004
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_6004-kuutio.jpg
-image: valokuvat/IMG_6004.jpg
-hide_title_on_box: true
----

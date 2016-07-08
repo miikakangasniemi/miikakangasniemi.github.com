@@ -1,8 +1,0 @@
----
-title: IMG_4779
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_4779-kuutio.jpg
-image: valokuvat/IMG_4779.jpg
-hide_title_on_box: true
----

@@ -1,8 +1,0 @@
----
-title: IMG_5123
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_5123-kuutio.jpg
-image: valokuvat/IMG_5123.jpg
-hide_title_on_box: true
----

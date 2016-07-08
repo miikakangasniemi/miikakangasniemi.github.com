@@ -1,8 +1,0 @@
----
-title: IMG_6065
-layout: image
-categories: [valokuvat]
-box-image: valokuvat/IMG_6065-k.jpg
-image: valokuvat/IMG_6065.jpg
-hide_title_on_box: true
----
