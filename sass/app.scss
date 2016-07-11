@@ -15,15 +15,15 @@ html {
 
 body {
   background: $white;
-  font-family: Verdana, sans-serif;
-  font-weight: 400;
+  font-family: 'niveau-grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
   color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h1 {
@@ -44,8 +44,9 @@ p {
   @include rhythm(0, 0, 0, 4);
 
   &.ingress {
+    @include adjust-font-size-to(30px);
     text-align: center;
-    max-width: 50em;
+    max-width: 36em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -71,11 +72,11 @@ hr {
 
 .logo {
   float: left;
-  margin-right: em(60px);
+  margin-right: em(60px, $nav-font-size);
 }
 
 .logo__img {
-   width: em(138px);
+   width: em(138px, $nav-font-size);
 }
 
 nav {
@@ -110,7 +111,7 @@ nav {
   }
 
   a {
-    @include adjust-font-size-to(14px);
+    @include adjust-font-size-to($nav-font-size);
     display: block;
     text-decoration: none;
   }
@@ -249,6 +250,7 @@ nav {
 }
 
 footer {
+  @include adjust-font-size-to(20px);
   margin-top: rhythm(9);
   padding: rhythm(9) 0;
   clear: both;
@@ -258,6 +260,11 @@ footer {
 
   ul {
      list-style: none;
+     padding: 0;
+  }
+
+  h2 {
+     @include adjust-font-size-to(30px, $from-size: 20px);
   }
 }
 

@@ -25,3 +25,5 @@ $blue-transparent: transparentize($blue, .4);
 @function em($pixels, $context: $base-font-size) {
   @return $pixels / $context * 1em;
 }
+
+$nav-font-size: 20px;
