@@ -350,12 +350,12 @@ table {
 }
 
 html {
-  font-size: 100%;
-  line-height: 0.375em;
+  font-size: 125%;
+  line-height: 0.3em;
 }
 
 html {
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 body {
@@ -372,21 +372,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  margin-top: 1em;
+  font-size: 1.7em;
+  line-height: 1.23529em;
+  margin-top: 0.70588em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35294em;
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 1.2em;
-  margin-top: 1.2em;
+  margin-top: 0.8em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.4em;
 }
 
 a {
@@ -397,10 +397,10 @@ p {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 }
 p.ingress {
-  font-size: 1.875em;
+  font-size: 1.5em;
   line-height: 1.2em;
   text-align: center;
   max-width: 36em;
@@ -414,7 +414,7 @@ img {
 }
 
 hr {
-  margin: 2.25em 0;
+  margin: 1.8em 0;
   height: 0;
   border: 0;
   border-top: 1px solid #ffffff;
@@ -437,8 +437,8 @@ hr {
 
 nav {
   margin-top: 0em;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   margin-bottom: 0em;
 }
 nav ul {
@@ -462,7 +462,7 @@ nav .current > ul li.current, nav .current > ul li.path, nav .path > ul li.curre
   font-weight: 700;
 }
 nav a {
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.2em;
   display: block;
   text-decoration: none;
@@ -479,7 +479,7 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 
 .main-nav {
   background: #ffffff;
-  box-shadow: 0 0.125em 0.8125em rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0.1em 0.65em rgba(0, 0, 0, 0.14);
   position: relative;
   z-index: 10000;
   -webkit-transition: -webkit-transform .25s;
@@ -523,11 +523,11 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 
 .main {
   max-width: 1200px;
-  margin: 1.875em auto;
+  margin: 1.5em auto;
 }
 
 .slider {
-  margin-bottom: 1.875em;
+  margin-bottom: 1.5em;
 }
 
 .boxes {
@@ -536,7 +536,7 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 @media (min-width: 1230px) {
   .boxes {
-    font-size: 1.375em;
+    font-size: 1.1em;
     line-height: 1.09091em;
   }
 }
@@ -608,10 +608,8 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 
 footer {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  margin-top: 3.375em;
-  padding: 3.375em 0;
+  margin-top: 2.7em;
+  padding: 2.7em 0;
   clear: both;
   text-align: center;
   background: #213a71;

@@ -27,13 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include adjust-font-size-to(24px);
-  @include rhythm(4, 0, 0, 2, 24px);
+  @include adjust-font-size-to(34px);
+  @include rhythm(4, 0, 0, 2, 34px);
 }
 
 h2 {
-  @include adjust-font-size-to(20px);
-  @include rhythm(4, 0, 0, 2, 20px);
+  @include adjust-font-size-to(30px);
+  @include rhythm(4, 0, 0, 2, 30px);
 }
 
 a {
@@ -250,7 +250,6 @@ nav {
 }
 
 footer {
-  @include adjust-font-size-to(20px);
   margin-top: rhythm(9);
   padding: rhythm(9) 0;
   clear: both;
@@ -264,7 +263,7 @@ footer {
   }
 
   h2 {
-     @include adjust-font-size-to(30px, $from-size: 20px);
+     @include adjust-font-size-to(30px);
   }
 }
 
