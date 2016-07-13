@@ -411,6 +411,7 @@ p.ingress {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 hr {
@@ -597,6 +598,45 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   display: list-item;
 }
 
+div.miika {
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 50em) {
+  .miika__image-wrapper {
+    width: 55.3719%;
+    float: left;
+    margin-right: 0.41322%;
+    height: 0;
+    padding-bottom: 46.875%;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .miika__image {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+}
+
+.miika__content {
+  padding: 1.2em 1.25%;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (min-width: 50em) {
+  .miika__content {
+    width: 44.21488%;
+    float: right;
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
 [class^="nivo-"] {
   box-sizing: content-box;
 }
@@ -651,6 +691,15 @@ form .actions {
   padding: .3em .8em;
   line-height: 1;
   display: inline-block;
+}
+
+.miika .main {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.miika footer {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

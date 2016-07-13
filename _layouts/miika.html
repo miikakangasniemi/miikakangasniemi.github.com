@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-<div class="boxes big">
-    <div class="box content">
-        <div class="inner">
-            <h1>{{ page.title }}</h1>
-            {{ content }}
-        </div>
-    </div>
-    <div class="box" style="background-image: url('{{ config.baseurl }}/media/theme-images/{{ page.imagename }}');"></div>
+<div class="miika" data-full-width
+  data-full-width-options='{"preserveAspectRatio": false}'>
+      <div class="miika__content">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+      </div>
+      <div class="miika__image-wrapper">
+          <img class="miika__image" src="{{ config.baseurl }}/media/miika-kangasniemi/{{ page.imagename }}">
+      </div>
 </div>

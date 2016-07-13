@@ -1,26 +1,19 @@
 ---
 title: Miika Kangasniemi
 layout: miika
-permalink: /miika-kangasniemi
+permalink: /miika-kangasniemi/
 show_title: true
 extra_classes: miika
 imagename: miika-iso.jpg
 ---
 
-s. 1987  
-Kemi-Tornion AMK, Kuvataiteilija AMK
+Olen rovaniemeläinen valokuvaaja. Olen koulutukseltani kuvataiteilija ja
+opiskelen Valokuvaajan ammattitutkintoa (Vat).  
+Valokuvausinnostukseni alkoi opiskeluaikanani jonka jälkeen olen kuvannut
+aktiivisesti.
 
-Olen Rovaniemeläinen taiteilija, suunnittelija ja
-kuvaaja. Esittelen nettisivuillani työnäytteitäni.
+Tarjoan hää-, henkilö-, tapahtuma ja kiinteistökuvausta yksityishenkilöille
+ja yrityksille.
 
-Olen tehnyt monenlaisia työtehtäviä taitosta
-videokuvaukseen/editointiin. Minua kiinnostaa luoda
-laadukasta jälkeä ja vastata asiakkaan toiveisiin
-sekä ottaa uusia haasteita vastaan.
-
-Osaan käyttää useita eri työvälineitä ja ohjelmia
-Photo shop, Indesign, Illustrator, Premiere Pro ja
-Lightroom.
-
-puh. 040 834 3161
-s-posti miika.kangasniemi(ät)gmail.com
+Teen myös graafista suunnittelua mm. yritysilmeen (logo, värimaailma),
+flyereiden ja lehtimainosten suunnittelua.

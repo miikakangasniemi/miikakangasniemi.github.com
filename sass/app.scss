@@ -55,6 +55,7 @@ p {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 hr {
@@ -238,6 +239,40 @@ nav {
   display: list-item;
 }
 
+div.miika {
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.miika__image-wrapper {
+  @media screen and (min-width: $miika-breakpoint) {
+    @include span(5 of 9);
+    height: 0;
+    padding-bottom: (1200px / 2560px ) * 100%;
+  }
+}
+
+.miika__image {
+  @media screen and (min-width: $miika-breakpoint) {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+}
+
+.miika__content {
+  padding: rhythm(4) gutter();
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: $miika-breakpoint) {
+    @include span(last 4 of 9);
+    padding-left: 0;
+  }
+}
+
 [class^="nivo-"] {
   box-sizing: content-box;
 }
@@ -298,3 +333,11 @@ form {
     display: inline-block;
   }
 
+.miika .main {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.miika footer {
+  margin-top: 0;
+}
