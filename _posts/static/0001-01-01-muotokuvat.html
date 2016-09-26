@@ -1,9 +1,13 @@
 ---
 title: Muotokuvat
-layout: category
+layout: images
 permalink: /muotokuvat/
+images_path: muotokuvat
+images:
+  - name: Muotokuva 1
+    file: muotokuva-1.jpg
+    hide_name_on_box: true
+  - name: Muotokuva 2
+    file: muotokuva-2.jpg
+    hide_name_on_box: true
 ---
-
-{% for post in site.categories.toimeksiannot %}
-    {% include category_post_box.html %}
-{% endfor %}

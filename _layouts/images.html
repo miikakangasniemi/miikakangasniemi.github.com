@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% if page.disable_title_box and page.enable_plain_title %}
+    <h1>{{ page.title}}</h1>
+{% endif %}
+<div class="boxes">
+    {% unless page.disable_title_box %}
+        <div class="box  box--square  box--title">
+            <h1>{{ page.title }}</h1>
+        </div>
+    {% endunless %}
+    {% for image in page.images %}
+        <a
+          class="box  box--square"
+          href="{{ site.baseurl }}/media/{{ page.images_path }}/{{ image.file }}"
+          style="background-image: url('{{ site.baseurl }}/media/{{ page.images_path }}/thumb/{{ image.file }}');"
+          data-image="{{ site.baseurl }}/media/{{ page.images_path }}/{{ image.file }}"
+          data-lightbox-gallery="{{ page.url }}"
+          >
+            {% unless image.hide_name_on_box %}<span class="box__title">{{ image.name }}</span>{% endunless %}
+        </a>
+    {% endfor %}
+</div>

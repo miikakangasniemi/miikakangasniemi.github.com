@@ -209,9 +209,21 @@ nav {
   padding-bottom: 260px / 795px * span(2 of 3);
 }
 
-.box:nth-child(3),
-.box:nth-child(4),
-.box:last-child {
+.box--square {
+  padding-bottom: span(1 of 3);
+}
+
+.box--title {
+  background: $blue;
+  color: $white;
+
+  h1 {
+    font-size: 2em;
+    margin: .5em 1em;
+  }
+}
+
+.box:nth-child(3n) {
   @include last;
 }
 
@@ -282,6 +294,10 @@ div.miika {
     background: #191919; /* 90% black on white. */
     background: rgba(0, 0, 0, 0.9);
   }
+
+  .nivo-lightbox-image img {
+    margin: 0 auto;
+  }
 }
 
 footer {
@@ -332,6 +348,18 @@ form {
     line-height: 1;
     display: inline-block;
   }
+
+.home {
+  .box:nth-child(6) {
+    float: left;
+  }
+
+  .box:nth-child(3),
+  .box:nth-child(4),
+  .box:last-child {
+    @include last;
+  }
+}
 
 .miika .main {
   margin-top: 0;

@@ -566,9 +566,20 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
   padding-bottom: 21.66667%;
 }
 
-.box:nth-child(3),
-.box:nth-child(4),
-.box:last-child {
+.box--square {
+  padding-bottom: 32.5%;
+}
+
+.box--title {
+  background: #213a71;
+  color: #ffffff;
+}
+.box--title h1 {
+  font-size: 2em;
+  margin: .5em 1em;
+}
+
+.box:nth-child(3n) {
   float: right;
   margin-right: 0;
 }
@@ -646,6 +657,9 @@ div.miika {
   /* 90% black on white. */
   background: rgba(0, 0, 0, 0.9);
 }
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+  margin: 0 auto;
+}
 
 footer {
   margin-top: 2.7em;
@@ -691,6 +705,16 @@ form .actions {
   padding: .3em .8em;
   line-height: 1;
   display: inline-block;
+}
+
+.home .box:nth-child(6) {
+  float: left;
+}
+.home .box:nth-child(3),
+.home .box:nth-child(4),
+.home .box:last-child {
+  float: right;
+  margin-right: 0;
 }
 
 .miika .main {
