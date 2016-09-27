@@ -1,61 +1,67 @@
 ---
-title: Olivia ja Henrik
+title: Henrik ja Olivia
 layout: images
 category: haat
-images_path: haat/olivia-ja-henrik
+images_path: haat/henrik-ja-olivia
 images:
-  - name: 1
-    file: olivia-ja-henrik-1.jpg
+  - name: 01
+    file: henrik-ja-olivia-01.jpg
     hide_name_on_box: true
   - name: 2
-    file: olivia-ja-henrik-2.jpg
+    file: henrik-ja-olivia-02.jpg
     hide_name_on_box: true
   - name: 3
-    file: olivia-ja-henrik-3.jpg
+    file: henrik-ja-olivia-03.jpg
     hide_name_on_box: true
   - name: 4
-    file: olivia-ja-henrik-4.jpg
+    file: henrik-ja-olivia-04.jpg
     hide_name_on_box: true
   - name: 5
-    file: olivia-ja-henrik-5.jpg
+    file: henrik-ja-olivia-05.jpg
     hide_name_on_box: true
   - name: 6
-    file: olivia-ja-henrik-6.jpg
+    file: henrik-ja-olivia-06.jpg
     hide_name_on_box: true
   - name: 7
-    file: olivia-ja-henrik-7.jpg
+    file: henrik-ja-olivia-07.jpg
     hide_name_on_box: true
   - name: 8
-    file: olivia-ja-henrik-8.jpg
+    file: henrik-ja-olivia-08.jpg
     hide_name_on_box: true
   - name: 9
-    file: olivia-ja-henrik-9.jpg
+    file: henrik-ja-olivia-09.jpg
     hide_name_on_box: true
   - name: 10
-    file: olivia-ja-henrik-10.jpg
+    file: henrik-ja-olivia-10.jpg
     hide_name_on_box: true
   - name: 11
-    file: olivia-ja-henrik-11.jpg
+    file: henrik-ja-olivia-11.jpg
     hide_name_on_box: true
   - name: 12
-    file: olivia-ja-henrik-12.jpg
+    file: henrik-ja-olivia-12.jpg
     hide_name_on_box: true
   - name: 13
-    file: olivia-ja-henrik-13.jpg
+    file: henrik-ja-olivia-13.jpg
     hide_name_on_box: true
   - name: 14
-    file: olivia-ja-henrik-14.jpg
+    file: henrik-ja-olivia-14.jpg
     hide_name_on_box: true
   - name: 15
-    file: olivia-ja-henrik-15.jpg
+    file: henrik-ja-olivia-15.jpg
     hide_name_on_box: true
   - name: 16
-    file: olivia-ja-henrik-16.jpg
+    file: henrik-ja-olivia-16.jpg
     hide_name_on_box: true
   - name: 17
-    file: olivia-ja-henrik-17.jpg
+    file: henrik-ja-olivia-17.jpg
     hide_name_on_box: true
   - name: 18
-    file: olivia-ja-henrik-18.jpg
+    file: henrik-ja-olivia-18.jpg
+    hide_name_on_box: true
+  - name: 19
+    file: henrik-ja-olivia-19.jpg
+    hide_name_on_box: true
+  - name: 20
+    file: henrik-ja-olivia-20.jpg
     hide_name_on_box: true
 ---
