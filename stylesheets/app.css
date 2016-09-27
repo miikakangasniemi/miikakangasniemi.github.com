@@ -707,6 +707,14 @@ form .actions {
   display: inline-block;
 }
 
+.lg-backdrop {
+  z-index: 10040;
+}
+
+.lg-outer {
+  z-index: 10050;
+}
+
 .home .box:nth-child(6) {
   float: left;
 }

@@ -331,23 +331,30 @@ form {
 
     input, textarea {
       @include span(last 3 of 4);
-      }
-    }
-
-    .actions {
-      @include push(1 of 4);
     }
   }
 
-
-  .btn, input[type="submit"] {
-    background: $red;
-    color: $dark;
-    border: none;
-    padding: .3em .8em;
-    line-height: 1;
-    display: inline-block;
+  .actions {
+    @include push(1 of 4);
   }
+}
+
+.btn, input[type="submit"] {
+  background: $red;
+  color: $dark;
+  border: none;
+  padding: .3em .8em;
+  line-height: 1;
+  display: inline-block;
+}
+
+.lg-backdrop {
+  z-index: 10040;
+}
+
+.lg-outer {
+  z-index: 10050;
+}
 
 .home {
   .box:nth-child(6) {

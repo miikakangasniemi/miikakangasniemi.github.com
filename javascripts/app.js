@@ -1,12 +1,15 @@
 (function ($) {
   "use strict";
   $(function () {
-    $("a[data-image]")
-      .each(function() {
-        var self = $(this);
-        self.attr('href', self.attr('data-image'));
-      })
-      .nivoLightbox();
+    var images = $(".boxes--images");
+    if (images.length > 0) {
+      lightGallery(
+        images[0],
+        {
+          download: false
+        }
+      );
+    }
     $(".slider").slick({
       arrows: false,
       autoplay: true
