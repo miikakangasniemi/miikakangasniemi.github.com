@@ -61,13 +61,13 @@ slides:
         image_name: muotokuvat2.jpg
 ---
 
-<p class="ingress">
+<p class="ingress" id="portfolio">
     Olen rovaniemeläinen valokuvaaja. Tarjoan hää-, henkilö-, tapahtuma- ja
     kiinteistökuvausta yksityishenkilöille sekä yrityksille. Teen myös
     graafista suunnittelua.
 </p>
 
-<div class="boxes" id="portfolio">
+<div class="boxes">
     {% for box in page.boxes %}
         <a
          class="box  box--{{ box.variant }}"
