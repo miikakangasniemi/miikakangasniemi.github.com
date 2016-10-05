@@ -13,11 +13,11 @@ html {
   @include adjust-leading-to(4);
 
   @media (max-width: 599px) {
-    @include adjust-font-size-to(18px);
+    @include adjust-font-size-to(17px);
   }
 
   @media (min-width: 600px) and (max-width: 699px) {
-    @include adjust-font-size-to(19px);
+    @include adjust-font-size-to(18px);
   }
 }
 
@@ -124,9 +124,13 @@ nav {
   }
 
   a {
-    @include adjust-font-size-to($nav-font-size);
+    @include adjust-font-size-to($nav-font-size + 4px);
     display: block;
     text-decoration: none;
+
+    @media (min-width: 700px) {
+      @include adjust-font-size-to($nav-font-size);
+    }
   }
 
   .has-children.current, .has-children.path {

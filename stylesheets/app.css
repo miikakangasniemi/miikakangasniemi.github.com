@@ -359,14 +359,14 @@ html {
 }
 @media (max-width: 599px) {
   html {
-    font-size: 0.9em;
-    line-height: 1.33333em;
+    font-size: 0.85em;
+    line-height: 1.41176em;
   }
 }
 @media (min-width: 600px) and (max-width: 699px) {
   html {
-    font-size: 0.95em;
-    line-height: 1.26316em;
+    font-size: 0.9em;
+    line-height: 1.33333em;
   }
 }
 
@@ -481,10 +481,16 @@ nav .current > ul li.current, nav .current > ul li.path, nav .path > ul li.curre
   font-weight: 700;
 }
 nav a {
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.25em;
   display: block;
   text-decoration: none;
+}
+@media (min-width: 700px) {
+  nav a {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
 }
 nav .has-children.current, nav .has-children.path {
   display: block;
