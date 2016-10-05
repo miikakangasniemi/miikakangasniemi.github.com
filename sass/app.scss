@@ -13,11 +13,11 @@ html {
   @include adjust-leading-to(4);
 
   @media (max-width: 599px) {
-    @include adjust-font-size-to(16px);
+    @include adjust-font-size-to(18px);
   }
 
   @media (min-width: 600px) and (max-width: 699px) {
-    @include adjust-font-size-to(18px);
+    @include adjust-font-size-to(19px);
   }
 }
 
@@ -52,11 +52,15 @@ p {
   @include rhythm(0, 0, 0, 4);
 
   &.ingress {
-    @include adjust-font-size-to(30px);
+    @include adjust-font-size-to(24px);
     text-align: center;
     max-width: 36em;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 700px) {
+      @include adjust-font-size-to(30px);
+    }
   }
 }
 
@@ -192,11 +196,11 @@ nav {
   overflow: hidden;
 
   @media (max-width: 499px) {
-    font-size: $box-title-target-font-size / 549px * 100vw;
+    font-size: $box-title-target-font-size / 699px * 100vw;
   }
 
   @media (min-width: 500px) and (max-width: 699px) {
-    font-size: $box-title-target-font-size / 699px * 100vw;
+    font-size: $box-title-target-font-size / 799px * 100vw;
   }
 
   @media (min-width: 700px) and (max-width: #{1200px + $gutter * 2 - 1px}) {

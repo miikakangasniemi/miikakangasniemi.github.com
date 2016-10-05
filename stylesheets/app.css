@@ -359,14 +359,14 @@ html {
 }
 @media (max-width: 599px) {
   html {
-    font-size: 0.8em;
-    line-height: 1.5em;
+    font-size: 0.9em;
+    line-height: 1.33333em;
   }
 }
 @media (min-width: 600px) and (max-width: 699px) {
   html {
-    font-size: 0.9em;
-    line-height: 1.33333em;
+    font-size: 0.95em;
+    line-height: 1.26316em;
   }
 }
 
@@ -412,12 +412,18 @@ p {
   margin-bottom: 1.2em;
 }
 p.ingress {
-  font-size: 1.5em;
-  line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.25em;
   text-align: center;
   max-width: 36em;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 700px) {
+  p.ingress {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
 }
 
 img {
@@ -548,12 +554,12 @@ nav .has-children.current > ul > li, nav .has-children.path > ul > li {
 }
 @media (max-width: 499px) {
   .boxes {
-    font-size: 4.00729vw;
+    font-size: 3.14735vw;
   }
 }
 @media (min-width: 500px) and (max-width: 699px) {
   .boxes {
-    font-size: 3.14735vw;
+    font-size: 2.75344vw;
   }
 }
 @media (min-width: 700px) and (max-width: 1229px) {
