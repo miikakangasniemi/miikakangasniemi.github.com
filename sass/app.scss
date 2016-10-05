@@ -11,6 +11,14 @@
 
 html {
   @include adjust-leading-to(4);
+
+  @media (max-width: 599px) {
+    @include adjust-font-size-to(16px);
+  }
+
+  @media (min-width: 600px) and (max-width: 699px) {
+    @include adjust-font-size-to(18px);
+  }
 }
 
 body {
@@ -182,7 +190,18 @@ nav {
 
 .boxes {
   overflow: hidden;
-  font-size: $box-title-target-font-size / 1200px * 100vw;
+
+  @media (max-width: 499px) {
+    font-size: $box-title-target-font-size / 549px * 100vw;
+  }
+
+  @media (min-width: 500px) and (max-width: 699px) {
+    font-size: $box-title-target-font-size / 699px * 100vw;
+  }
+
+  @media (min-width: 700px) and (max-width: #{1200px + $gutter * 2 - 1px}) {
+    font-size: $box-title-target-font-size / 1200px * 100vw;
+  }
 
   @media (min-width: #{1200px + $gutter * 2}) {
     @include adjust-font-size-to($box-title-target-font-size, 4);
@@ -190,27 +209,55 @@ nav {
 }
 
 .box {
-  @include span(1 of 3);
   background-size: cover;
   background-position: center center;
   display: block;
   height: 0;
-  padding-bottom: 260px / 390px * span(1 of 3);
-  margin-bottom: gutter(3);
   position: relative;
+
+  @media (max-width: 699px) {
+    @include span(1 of 2);
+    padding-bottom: 260px / 390px * span(1 of 2);
+    margin-bottom: gutter(2);
+  }
+
+  @media (min-width: 700px) {
+    @include span(1 of 3);
+    padding-bottom: 260px / 390px * span(1 of 3);
+    margin-bottom: gutter(3);
+  }
 }
 
 .box--tall {
-  padding-bottom: 535px / 390px * span(1 of 3);
+  @media (max-width: 699px) {
+    padding-bottom: 535px / 390px * span(1 of 2);
+  }
+
+  @media (min-width: 700px) {
+    padding-bottom: 535px / 390px * span(1 of 3);
+  }
 }
 
 .box--wide {
-  @include span(2 of 3);
-  padding-bottom: 260px / 795px * span(2 of 3);
+  @media (max-width: 699px) {
+    @include span(2 of 2);
+    padding-bottom: 260px / 795px * span(2 of 2);
+  }
+
+  @media (min-width: 700px) {
+    @include span(2 of 3);
+    padding-bottom: 260px / 795px * span(2 of 3);
+  }
 }
 
 .box--square {
-  padding-bottom: span(1 of 3);
+  @media (max-width: 699px) {
+    padding-bottom: span(1 of 2);
+  }
+
+  @media (min-width: 700px) {
+    padding-bottom: span(1 of 3);
+  }
 }
 
 .box--title {
@@ -223,8 +270,18 @@ nav {
   }
 }
 
-.box:nth-child(3n) {
-  @include last;
+.box {
+  @media (max-width: 699px) {
+    &:nth-child(2n) {
+      @include last;
+    }
+  }
+
+  @media (min-width: 700px) {
+    &:nth-child(3n) {
+      @include last;
+    }
+  }
 }
 
 .box__title {
@@ -357,14 +414,32 @@ form {
 }
 
 .home {
+  .box--wide {
+    @media (max-width: 699px) {
+      @include span(1 of 2);
+      padding-bottom: 260px / 390px * span(1 of 2);
+      margin-bottom: gutter(2);
+    }
+  }
+
   .box:nth-child(6) {
     float: left;
   }
 
-  .box:nth-child(3),
-  .box:nth-child(4),
-  .box:last-child {
-    @include last;
+  @media (max-width: 699px) {
+    .box:nth-child(3),
+    .box:nth-child(5),
+    .box:last-child {
+      @include last;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .box:nth-child(3),
+    .box:nth-child(4),
+    .box:last-child {
+      @include last;
+    }
   }
 }
 
