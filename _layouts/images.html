@@ -16,8 +16,6 @@ layout: default
           class="box  box--square"
           href="{{ site.baseurl }}/media/{{ page.images_path }}/{{ image.file }}"
           style="background-image: url('{{ site.baseurl }}/media/{{ page.images_path }}/thumb/{{ image.file }}');"
-          data-image="{{ site.baseurl }}/media/{{ page.images_path }}/{{ image.file }}"
-          data-lightbox-gallery="{{ page.url }}"
           >
             {% unless image.hide_name_on_box %}<span class="box__title">{{ image.name }}</span>{% endunless %}
         </a>
