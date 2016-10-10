@@ -6,7 +6,8 @@
       lightGallery(
         images[0],
         {
-          download: false
+          download: false,
+          selector: '.box:not(.box--title)'
         }
       );
     }
