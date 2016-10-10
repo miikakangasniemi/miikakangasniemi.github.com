@@ -762,6 +762,24 @@ footer h2 {
   line-height: 1.2em;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.some-links {
+  margin: 2.4em 0 0;
+}
+.some-links a {
+  color: #fff;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
 form label {
   display: block;
   margin: 10px 0;
