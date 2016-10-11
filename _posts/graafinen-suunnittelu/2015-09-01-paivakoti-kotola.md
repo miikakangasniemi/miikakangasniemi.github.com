@@ -17,6 +17,6 @@ images:
     file: Mainostaulu.jpg
     hide_name_on_box: 
   - name: Rollup
-    file: Rollut.jpg
+    file: Rollup.jpg
     hide_name_on_box: 
 ---
