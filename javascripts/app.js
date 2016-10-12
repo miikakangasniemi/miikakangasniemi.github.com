@@ -11,9 +11,11 @@
         }
       );
     }
-    $(".slider").slick({
-      arrows: false,
-      autoplay: true
+    $('.slider').imagesLoaded(function () {
+      $(".slider").slick({
+        arrows: false,
+        autoplay: true
+      });
     });
 
     (function () {
