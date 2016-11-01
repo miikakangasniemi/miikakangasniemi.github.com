@@ -1,5 +1,5 @@
 ---
-title: Antti ja Suh Yong
+title: Antti ja Suhyun
 layout: images
 category: haat
 images_path: haat/antti-ja-suh-yong
