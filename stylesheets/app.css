@@ -845,6 +845,9 @@ form .actions {
     float: right;
     margin-right: 0;
   }
+  .home .box:nth-child(5) {
+    clear: left;
+  }
 }
 
 .miika .main {

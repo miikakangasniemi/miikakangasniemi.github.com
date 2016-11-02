@@ -468,6 +468,10 @@ form {
     .box:last-child {
       @include last;
     }
+
+    .box:nth-child(5) {
+      clear: left;
+    }
   }
 }
 
