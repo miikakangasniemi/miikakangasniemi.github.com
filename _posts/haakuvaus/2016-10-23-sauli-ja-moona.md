@@ -1,7 +1,7 @@
 ---
 title: Moona ja Sauli
 layout: images
-category: haat
-images_path: haat/sauli-ja-moona
+category: haakuvaus
+images_path: haakuvaus/sauli-ja-moona
 image_count: 44
 ---
