@@ -2,7 +2,7 @@
 title: Junnu vaskooli
 layout: images
 category: graafinen-suunnittelu
-images_path: graafinen-suunnittelu/Christmashouse-santa
+images_path: graafinen-suunnittelu/Junnuvaskooli
 images:
   - name: logo
     file: logo.jpg
