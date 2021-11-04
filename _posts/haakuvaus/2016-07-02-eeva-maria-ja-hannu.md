@@ -1,5 +1,5 @@
 ---
-title: Eeva-Maria ja Hannu
+title: E & H
 layout: images
 category: haakuvaus
 images_path: haakuvaus/eeva-maria-ja-hannu

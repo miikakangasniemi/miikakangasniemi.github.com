@@ -1,5 +1,5 @@
 ---
-title: Saana ja Zenja
+title: S & Z
 layout: images
 category: haakuvaus
 images_path: haakuvaus/saana-ja-zenja

@@ -1,5 +1,5 @@
 ---
-title: Moona ja Sauli
+title: M & S
 layout: images
 category: haakuvaus
 images_path: haakuvaus/sauli-ja-moona

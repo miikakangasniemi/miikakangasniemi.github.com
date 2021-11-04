@@ -1,5 +1,5 @@
 ---
-title: Jaana ja Marko
+title: J & M
 layout: images
 category: haakuvaus
 images_path: haakuvaus/jaana-ja-marko
