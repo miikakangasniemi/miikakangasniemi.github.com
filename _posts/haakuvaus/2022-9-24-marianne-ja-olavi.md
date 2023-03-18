@@ -1,5 +1,5 @@
 ---
-title: m & o
+title: M & O
 layout: images
 category: haakuvaus
 images_path: haakuvaus/marianne-ja-olavi
